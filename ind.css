@@ -1,0 +1,402 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	scroll-behavior: smooth;
+	font-family: 'Baloo Bhai 2', cursive;
+	text-decoration: none;
+}
+body{
+	background-color: #292826;
+}
+section {
+	min-height: 100vh;
+	
+	padding: 10rem 9% 2rem;
+}
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem 9%;
+	background: #292826;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+img{
+	width: 75px;
+	cursor: pointer;
+}
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+
+}
+.navbar a{
+	font-size: 25px;
+	color: #ffff;
+	margin-left: 64px;
+	transition: 0.5s;
+	font-weight: 600;
+}
+.navbar a:hover,
+.navbar a.active{
+	color: #50A2FF;
+}
+
+
+.mpic{
+	width: 390px;
+	transition: 0.5s;
+	margin-right: 80px;
+	border-radius: 30%;
+	margin-left: 100px;
+
+}
+.mpic:hover{
+	width: 410px;
+}
+
+
+.menu h1{
+	color: #ffff;
+	font-size: 50px;
+	display: flex;
+}
+span h1{
+	color: #ffff;
+}
+.menu p{
+	color: #ffff;
+	font-size: 20px;
+}
+span{
+	color: #50A2FF;
+}
+.wap{
+	display: flex;
+}
+.text li{
+	position: relative;
+	top: 0;
+	list-style: none;
+	padding: 0 20px;
+	text-shadow: 0 0 10px #50A2FF;
+	animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+	100%{
+		top: -360px;
+	}
+}
+.wap .text{
+	height: 90px;
+	line-height: 90px;
+	overflow: hidden;
+}
+.text li span{
+	position: relative;
+}
+.text li span:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 400px;
+	height: 90px;
+	background: #292826;
+	border-left: 5px solid #50A2FF;
+	animation: typing 1.5s steps(10) infinite alternate;
+}
+@keyframes typing{
+	100%{
+		left:100%;
+		margin: 0 -35px 0 35px;
+	}
+}
+/*****about SECTION*****/
+.about img{ 
+	width:25vw;
+	transition: 0.5s;
+		margin-right: 150px;
+		border-radius: 20%;
+}
+.about img:hover{
+	width: 28vw;
+	cursor: pointer;
+	box-shadow: 1px 1px 32px #50A2FF;
+
+
+}
+.about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffff;
+	background-color: #353535;
+}
+.tital {
+	text-align: left;
+}
+h2{
+	color: #ffff;
+
+	font-size: 80px;
+}
+
+h3{
+	font-size: 30px;
+}
+ p{
+	font-size: 16px;
+	margin: 2rem 0 3rem;
+
+
+}
+.btn4{
+	margin-top: 20px;
+}
+.btn4 .button{
+	display: inline-block;
+	width: 16%;
+	padding: 10px;
+	background-color: transparent ;
+	border: 3px solid #50A2FF ;
+	color: #ffff;
+	font-size: 20px;
+	font-weight: 600;
+	transition: 0.5s;
+	text-align: center;
+}
+.btn4 .button:hover{
+	background-color: #50A2FF ;
+	box-shadow: 0 0 1rem #50A2FF;
+
+}
+/*****SKILL SECTION*****/
+section.skill{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffff;
+}
+.main-section h2{
+	text-align: center;
+	margin-top: 15px;
+}
+.skill {
+	margin-top: 60px;
+	font-size: 17px;
+}
+
+.skill span {
+	float: right;
+	color: #ffff;
+}
+
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 15px;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+
+.skill div span {
+	background: #50A2FF;
+	height: 5px;
+	float: left; 
+}
+.skill b{
+	color: #ffff;
+}
+section.projects-container{
+/*	display: flex;*/
+	justify-content: center;
+	align-items: center;
+/*	padding: 10%;*/
+	text-align: center;
+	background-color: #353535;
+}
+
+.wrapper{
+  margin: 100px auto;
+  max-width: 1100px;
+}
+.wrapper nav{
+  display: flex;
+  justify-content: center;
+}
+.wrapper .items{
+  display: flex;
+  max-width: 330px;
+  width: 100%;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffff;
+  border-radius: 50px;
+  border: 2px solid #50A2FF;
+  transition: all 0.3s ease;
+}
+.items span.active,
+.items span:hover{
+  color: #fff;
+  background: #50A2FF;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gallery .image{
+  width: calc(100% / 4);
+  padding: 7px;
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+  background:linear-gradient(rgba(0, 0, 0, .5) #50A2FF);
+
+}
+.gallery .image.hide{
+  display: none;
+}
+.gallery .image.show{
+  animation: animate 0.4s ease;
+}
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  padding: 13px 15px 13px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  font-weight: 500;
+  margin-left: 5px;
+}
+.details .icon{
+  color: #007bff;
+  font-style: 22px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  width: 100%;
+  display: flex;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.4);
+}
+.shadow.show{
+  display: block;
+}
+@media (max-width: 1000px) {
+  .gallery .image{
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 800px) {
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .wrapper nav .items{
+    max-width: 600px;
+  }
+  nav .items span{
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper{
+    margin: 30px auto;
+  }
+  .wrapper nav .items{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .items span{
+    margin: 5px;
+  }
+  .gallery .image{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
